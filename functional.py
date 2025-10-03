@@ -11,3 +11,7 @@ filtered = list(filter(lambda x: x % 2 == 0, numbers))
 print(f"Filtered: {filtered}")
 summed = sum(numbers)
 print(f"Summed: {summed}")
+
+characters = ['abc', 'de', 'fghi']
+lengths = list(map(len, characters))
+print(f'Lengths of {characters} are {lengths}')
