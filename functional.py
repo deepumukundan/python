@@ -15,3 +15,8 @@ print(f"Summed: {summed}")
 characters = ['abc', 'de', 'fghi']
 lengths = list(map(len, characters))
 print(f'Lengths of {characters} are {lengths}')
+
+names = ["Deepu", "Lekshmi", "Malavika", "Avantika"]
+names.reverse()
+names.sort(key=lambda x: len(x))
+print(names)
