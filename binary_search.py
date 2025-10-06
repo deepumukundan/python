@@ -3,6 +3,7 @@ def binary_search(arr: list, x: int):
     
     count = 0
     while low <= high:
+        # mid = (low + high) // 2
         mid = low + (high - low) // 2
         count += 1
 
@@ -18,5 +19,5 @@ def binary_search(arr: list, x: int):
     return False, count
 
 
-arr1 = [i for i in range(10000000)]
+arr1 = [i for i in range(100000)]
 print(binary_search(arr1, 50))
