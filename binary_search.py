@@ -19,5 +19,5 @@ def binary_search(arr: list, x: int):
     return False, count
 
 
-arr1 = [i for i in range(100000)]
+arr1 = [i for i in range(99999)]
 print(binary_search(arr1, 50))
