@@ -27,6 +27,7 @@ class Direction(Enum):
 
 for direction in Direction:
     print("--------------------------------")
+    print(direction.name)
     a, b = direction.value
     print(a, b)
     print("--------------------------------")

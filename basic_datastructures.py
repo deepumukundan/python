@@ -41,9 +41,10 @@ values = []
 def dfsInOrder(node):
         if not node:
             return
-        left = dfsInOrder(node.left)
+        
+        left = dfsInOrder(node.left)        
         values.append(node.val) # This is in-order. If this line was before left, its pre-order and after right is post-order
-        right = dfsInOrder(node.right)
+        right = dfsInOrder(node.right)        
 
         return values
 
@@ -53,6 +54,25 @@ root.right = TreeNode(15)
 root.left.left = TreeNode(1)
 root.left.right = TreeNode(7)
 dfsInOrder(root)
+print("DFS Results")
 print(values)
+
+#-------------------------------------------------
+from collections import deque
+
+def bfs(root):
+    if not root:
+        return []
+    q = deque([root])
+    res = []
+    while q:
+        node = q.popleft()
+        res.append(node.val)
+        if node.left: q.append(node.left)
+        if node.right: q.append(node.right)
+    return res
+
+print("BFS Results")
+print(bfs(root))
 
 #-------------------------------------------------

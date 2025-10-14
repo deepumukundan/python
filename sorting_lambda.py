@@ -6,4 +6,5 @@ a = {
     "w": [1,0,1,0],    
     }
 b = sorted(a.keys(), reverse=True, key=lambda x: (a[x], x))
+
 print("".join(b))

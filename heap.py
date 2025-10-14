@@ -12,11 +12,12 @@ def min_heap():
     print(heapq.heappop(minheap))
     print(minheap)
 
-    while len(minheap):
+    while minheap:
         print(heapq.heappop(minheap))
         print(minheap)
 
 def max_heap():
+    
     maxheap = []
     for i in range(10):
         heapq.heappush(maxheap, -i)
@@ -34,5 +35,6 @@ def max_heap():
 
 print("----Min Heap----")
 min_heap()
-# print("----Max Heap----")
-# max_heap()
+print("-----------------")
+print("----Max Heap----")
+max_heap()

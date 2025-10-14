@@ -1,3 +1,4 @@
+# Check if given number is a palindrome
 class Solution:
     def isPalindrome(self, x: int) -> bool:
         if x < 0:
